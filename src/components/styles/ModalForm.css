@@ -1,0 +1,58 @@
+
+
+.modal-form {
+    width: 500px;
+       height: 700px;
+       margin:10px auto;
+       display:table;
+       position: absolute;
+       left: 0;
+       right:0;
+       top: 10px;
+       border-radius: 10px;
+       border: none;
+       background-color: white;
+}
+
+.ModalForm {
+    transition: opacity 0.5s
+}
+
+.black-background {
+    background-color: black;
+    opacity: 30%;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+@media only screen and (max-width: 768px) {
+
+}
+
+@media only screen and (min-height: 700px) {
+    .modal-form {
+        width: 100px;
+           height: 100px;
+           margin:0 auto;
+           display:table;
+           position: absolute;
+           left: 0;
+           right:0;
+           top: 50%; 
+           border-radius: 10px;
+           border: none;
+           -webkit-transform:translateY(-50%);
+           -moz-transform:translateY(-50%);
+           -ms-transform:translateY(-50%);
+           -o-transform:translateY(-50%);
+           transform:translateY(-50%);
+    }
+}
+
+input {
+    height: 40px;
+    right: 10px;
+    left: 10px;
+}

@@ -1,0 +1,58 @@
+.listing-card.card {
+    height: 280px;
+    width: 250px;
+    background-color: aqua;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.listing-card.card .image-box {
+    height: 70%;
+}
+
+.listing-card.card .info-box {
+    background-color: black;
+    color: white;
+    display: flex;
+    height: 30%;
+    border-radius: 0px 0px 10px 10px;
+    
+}
+
+.listing-card.card .info-box .info-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px 10px 5px 10px;
+}
+
+.listing-card.card .info-box .info-list .item-price {
+    font-weight: bold;
+    text-align: left;
+    font-size: x-large;
+}
+
+.listing-card.card .info-box .info-list .item-name {
+    text-align: left;
+    font-size: 1rem;
+    height: max-content;
+}
+
+.listing-card.card .info-box .info-list .rating {
+    width: 150px;
+    height: 10px;
+    border-radius: 10px;
+}
+
+.add-to-cart {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+}
