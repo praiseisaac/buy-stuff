@@ -1,0 +1,30 @@
+
+
+.Form.submit-buttons-div {
+    padding-right: 0px;
+    display: flex;
+    justify-content: right;
+}
+
+.Form.submit-buttons-div button {
+    margin-inline: 10px;
+    width: 100px;
+}
+
+@media only screen and (max-width: 768px) {
+
+}
+
+@media only screen and (min-height: 800px) {
+
+}
+
+.MyForm.children input {
+    height: 40px;
+    border-radius: 2px;
+    border: 1px solid grey;
+    /* width: 100%; */
+    padding-inline: 10px;
+    margin-bottom: 10px;
+    font-size: medium;
+}

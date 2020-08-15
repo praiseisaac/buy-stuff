@@ -15,9 +15,14 @@ class MyButton extends React.Component {
     render() {
         return (
             <div>
-                <button onClick={this.props.onClick} className={ this.props.className } style={this.props.style} type={this.props.type}>
-                    {this.props.children}
-                </button>
+                <a href={this.props.href} style={{textDecoration: "none"}}>
+                    <div onClick={this.props.onClick} className={ "button " + this.props.className } style={this.props.style} type={this.props.type}>
+                        <span style={{ display: "block", textAlign: "center", margin: "auto" }}>
+                            {this.props.children}
+                        </span>
+                    </div>
+                </a>
+
             </div>
 
         );

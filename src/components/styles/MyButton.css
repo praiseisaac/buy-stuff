@@ -1,6 +1,13 @@
-button {
-    border-radius: 10px;
+.button {
+    border-radius: 3px;
     border-width: 0px;
     height: 40px;
-    padding-inline: auto;
+    padding: auto;
+    text-decoration: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    background-color: grey;
+    color: white;
 }

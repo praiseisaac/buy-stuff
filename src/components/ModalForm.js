@@ -10,27 +10,32 @@ class ModalForm extends React.Component {
     }
 
     handleSubmit(e) {
-        e.preventDefault();
+        
     }
 
     render() {
         return (
-            <div id={this.props.id} style={{visibility: this.props.visibility, opacity: this.props.opacity}}>
-                <div onClick={this.props.onExit} style={{opacity: this.props.opacity}} id="black-background" className="ModalForm black-background">
-            </div>
-            <div id="modal-form" className="ModalForm modal-form" style={{opacity: this.props.opacity}}>
-                <form onSubmit={(e) => {e.preventDefault();}}>
-                    <div>
-                        {this.props.children}
+            <div id={this.props.id}>
+                <div onClick={this.props.onExit} id="black-background" className="ModalForm black-background">
+                </div>
+                <div id="modal-form" className="modal-form">
+                    <div className="inner">
+                        <form action={this.props.action}>
+                            <div>
+                                {this.props.children}
+                            </div>
+                            <div className="ModalForm submit-buttons-div">
+                              <MyButton onClick={this.props.onSubmit} type="submit" className="ModalForm submit-button">
+                                Submit
+                            </MyButton>
+                            <MyButton onClick={this.props.onExit} className="ModalForm cancel-button">
+                                Cancel
+                            </MyButton>
+                            </div>
+                        </form>
                     </div>
-                    <MyButton onClick={this.handleSubmit} type="submit" className="ModalForm submit-form">
-                        Submit
-                    </MyButton>
-                    <MyButton onClick={this.props.onExit}>
-                        Cancel
-                    </MyButton>
-                </form>
-            </div>
+
+                </div>
             </div>
 
         );

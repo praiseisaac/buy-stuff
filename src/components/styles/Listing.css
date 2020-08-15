@@ -1,8 +1,8 @@
 .listing-card.card {
     height: 280px;
     width: 250px;
-    background-color: aqua;
-    border-radius: 10px;
+    background-color: #ebebeb;
+    border-radius: 3px;
     margin: 10px;
 }
 
@@ -15,8 +15,8 @@
     color: white;
     display: flex;
     height: 30%;
-    border-radius: 0px 0px 10px 10px;
-    
+    border-radius: 0px 0px 3px 3px;
+
 }
 
 .listing-card.card .info-box .info-list {
@@ -41,7 +41,7 @@
 .listing-card.card .info-box .info-list .rating {
     width: 150px;
     height: 10px;
-    border-radius: 10px;
+    border-radius: 3px;
 }
 
 .add-to-cart {
